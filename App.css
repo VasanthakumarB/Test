@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+input.filled {
+  border-color: red; /* Change to your desired border color */
+}
+h6.txt{
+  color:red;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #f0f0f0;
+}
+.Container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Content{
+  background-color: #ffffff;
+  width: 750px;
+  padding:50px;
+  border-radius: 20px;
+  border-bottom-right-radius: 20%;
+  position: relative;
+}
+.input{
+  display: flex;
+  margin-bottom: 35px;
+}
+
+input{
+  font-size: 32px;
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 0.5px solid  hsl(0, 0%, 86%);
+  outline: none;
+}
+h6{
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(259, 100%, 65%);
+}
+button{
+  position: absolute; 
+  width: 65px;
+  height: 65px;
+  border: none;
+  outline: none ;
+  background-color: #864bff;
+  border-radius: 50%;
+  padding: 10px;
+  right: 50px;
+  margin-top: -32px;
+  cursor:pointer;
+}
+button:hover{
+  background-color: black;
+  transition: 0.5s ease-in;
+}
+input:focus{
+  border: 0.5px solid #864bff;
+}
+p.error{
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  margin: 5px 0;
+  text-align: justify;
+}
+.result h1{
+  text-align: justify;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bolder;
+}
+input.error {
+  border-color: red;
+}
+.result span{
+  color:#864bff
+}
+@media only screen and (max-width:412px) {
+  .input{
+    margin-bottom: 40px;
+  }
+  input{
+    font-size: 18px;
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .Content{
+    background-color: white;
+    width: 300px;
+    padding:20px;
+    border-radius: 10px;
+    border-bottom-right-radius: 50%;
+    position: relative;
+  }
+  .result h1{
+    margin-left: 1px;
+    font-size: 45px;
+    font-style: italic;
+  }
+  p.error{
+    font-size: 8px;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    margin: 5px 0;
+    text-align: justify;
+  }
+  button{
+    right: 40%;
+  }
+  .result{
+    margin-top: 40px;
+  }
+  
+}
